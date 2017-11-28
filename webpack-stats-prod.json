@@ -1,0 +1,1 @@
+{"status":"error","publicPath":"/static/dist/","error":"Error","message":"main-fc34f33e5d4fdbc7ba90.js from UglifyJs\nUnexpected token: operator (>) [./frontend/main.js:6,12][main-fc34f33e5d4fdbc7ba90.js:164,15]"}

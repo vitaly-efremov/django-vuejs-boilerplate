@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load render_bundle from webpack_loader %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Django+VueJS app</title>
+
+    {% load staticfiles %}
+    {% static "" as base_url %}
+  </head>
+  <body class="theme-1 sidebar-offcanvas">
+
+    <div id="app"></div>
+    {% render_bundle 'main' %}
+  </body>
+</html>

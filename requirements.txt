@@ -1,0 +1,6 @@
+Django==1.11.4
+dj_database_url==0.4.2
+django-extensions==1.8.1
+django-webpack-loader==0.5.0
+djangorestframework==3.6.4
+gunicorn==19.7.1
