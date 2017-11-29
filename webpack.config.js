@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var BundleTracker = require('webpack-bundle-tracker');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Directory for deployed assets. It should be within our static files path.
 // Backslash at the end is not required.
@@ -41,7 +42,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
@@ -64,21 +65,21 @@ module.exports = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
+    // devtool: '#eval-source-map'
 };
 
 if (process.env.NODE_ENV === 'production')
 {
-    module.exports.devtool = '#source-map'
+    // module.exports.devtool = '#source-map'
     // http://vue-loader.vuejs.org/en/workflow/production.html
     module.exports.plugins = (module.exports.plugins || []).concat([
+        new CleanWebpackPlugin(dist_dir),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
             }
         }),
         new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
             compress: {
                 warnings: false
             }

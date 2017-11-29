@@ -1,1 +1,1 @@
-{"status":"error","publicPath":"/static/dist/","error":"Error","message":"main-fc34f33e5d4fdbc7ba90.js from UglifyJs\nUnexpected token: operator (>) [./frontend/main.js:6,12][main-fc34f33e5d4fdbc7ba90.js:164,15]"}
+{"status":"done","publicPath":"/static/dist/","chunks":{"main":[{"name":"main-06917d1bc2d0ce93722f.js","publicPath":"/static/dist/main-06917d1bc2d0ce93722f.js","path":"/Users/vefremov/dev/django-vuejs-boilerplate/static/dist/main-06917d1bc2d0ce93722f.js"}]}}
