@@ -5,23 +5,23 @@ A boilerplate for SPA applications with *Django* as Backend and *VueJS* as Front
 
 How to develop
 ------------    
-## Install npm modules and pip requirements
+#### Install npm modules and pip requirements
 ```
   yarn install
   pip install -r requirements.txt
 ```
 
-## Start frontend server
+#### Start frontend server
 ```
   yarn start
 ```
 
-## Start frontend server
+#### Start frontend server
 ```
   python manage.py runserver
 ```
 
-## Lint frontend
+#### Lint frontend
 ```
   yarn lint
 ```
