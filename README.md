@@ -1,6 +1,7 @@
 Introduction
 ------------
 A boilerplate for SPA applications with *Django* as Backend and *VueJS* as Frontend with hot loading.
+It uses django-webpack-loader to link bundles.
 
 
 How to develop
