@@ -17,7 +17,7 @@ How to develop
   yarn start
 ```
 
-#### Start frontend server
+#### Start backend server
 ```
   python manage.py runserver
 ```
